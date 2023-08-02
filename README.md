@@ -1,0 +1,1 @@
+## How to setup a local cluster for scylla
