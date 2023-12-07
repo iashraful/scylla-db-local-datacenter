@@ -4,7 +4,7 @@ services:
 
   scylla-node1:
     container_name: scylla-node1
-    image: scylladb/scylla:5.1.0
+    image: scylladb/scylla:5.2.10
     restart: always
     command: --seeds=scylla-node1,scylla-node2 --smp 1 --memory 750M --overprovisioned 1 --api-address 0.0.0.0
     expose:
@@ -18,7 +18,7 @@ services:
 
   scylla-node2:
     container_name: scylla-node2
-    image: scylladb/scylla:5.1.0
+    image: scylladb/scylla:5.2.10
     restart: always
     command: --seeds=scylla-node1,scylla-node2 --smp 1 --memory 750M --overprovisioned 1 --api-address 0.0.0.0
     expose:
@@ -32,7 +32,7 @@ services:
 
   scylla-node3:
     container_name: scylla-node3
-    image: scylladb/scylla:5.1.0
+    image: scylladb/scylla:5.2.10
     restart: always
     command: --seeds=scylla-node1,scylla-node2 --smp 1 --memory 750M --overprovisioned 1 --api-address 0.0.0.0
     expose:
@@ -46,7 +46,7 @@ services:
 
   scylla-node4:
     container_name: scylla-node4
-    image: scylladb/scylla:5.1.0
+    image: scylladb/scylla:5.2.10
     restart: always
     command: --seeds=scylla-node1,scylla-node2 --smp 1 --memory 750M --overprovisioned 1 --api-address 0.0.0.0
     expose:
@@ -60,7 +60,7 @@ services:
 
   scylla-node5:
     container_name: scylla-node5
-    image: scylladb/scylla:5.1.0
+    image: scylladb/scylla:5.2.10
     restart: always
     command: --seeds=scylla-node1,scylla-node2 --smp 1 --memory 750M --overprovisioned 1 --api-address 0.0.0.0
     expose:
@@ -74,7 +74,7 @@ services:
 
   scylla-node6:
     container_name: scylla-node6
-    image: scylladb/scylla:5.1.0
+    image: scylladb/scylla:5.2.10
     restart: always
     command: --seeds=scylla-node1,scylla-node2 --smp 1 --memory 750M --overprovisioned 1 --api-address 0.0.0.0
     expose:
