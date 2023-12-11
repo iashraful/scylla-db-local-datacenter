@@ -10,6 +10,7 @@ services:
     expose:
       - 9042
     volumes:
+      - ./scylla_data:/var/lib/scylla
       - "./scylla/scylla.yaml:/etc/scylla/scylla.yaml"
       - "./scylla/cassandra-rackdc.properties.dc1:/etc/scylla/cassandra-rackdc.properties"
     networks:
